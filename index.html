@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma Educacional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Plataforma Educacional</h1>
+        <nav>
+            <a href="#" onclick="mostrarCursos()">Cursos</a>
+            <a href="#" onclick="mostrarConteudo()">Conteúdo</a>
+            <a href="#" onclick="mostrarLogin()">Login</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section id="login" class="content-section">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Nome de usuário" required><br>
+                <input type="password" id="password" placeholder="Senha" required><br>
+                <button type="submit">Entrar</button>
+            </form>
+            <div id="login-message"></div>
+        </section>
+
+        <section id="cursos" class="content-section">
+            <h2>Cursos Disponíveis</h2>
+            <div class="courses-container">
+                <div class="course-card">
+                    <img src="https://via.placeholder.com/150" alt="Curso de HTML e CSS">
+                    <h3>Curso de HTML e CSS</h3>
+                    <p>Aprenda a criar páginas web com HTML5 e CSS3, desde o básico até o avançado.</p>
+                    <a href="#">Saiba mais</a>
+                </div>
+                <div class="course-card">
+                    <img src="https://via.placeholder.com/150" alt="Curso de JavaScript">
+                    <h3>Curso de JavaScript</h3>
+                    <p>Domine o JavaScript para criar páginas web interativas e dinâmicas.</p>
+                    <a href="#">Saiba mais</a>
+                </div>
+                <div class="course-card">
+                    <img src="https://via.placeholder.com/150" alt="Curso de Desenvolvimento Web">
+                    <h3>Curso de Desenvolvimento Web</h3>
+                    <p>Aprenda o fluxo completo de desenvolvimento de aplicações web.</p>
+                    <a href="#">Saiba mais</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="conteudo" class="content-section">
+            <h2>Conteúdo Educacional</h2>
+            <p>Bem-vindo à nossa plataforma! Explore cursos e aprenda novas habilidades.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Plataforma Educacional</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
